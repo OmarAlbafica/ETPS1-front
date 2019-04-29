@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Button from "./forms/Button";
 import Input from "./forms/Input";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default class Login extends Component {
   constructor(props) {
@@ -13,16 +15,23 @@ export default class Login extends Component {
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
-  obSubmit = e => {
+  onSubmit = e => {
     e.preventDefault();
-    // const { usuario, password } = this.state;
-
+    const { usuario, password } = this.state;
+    if (usuario === "") {
+      toast.error("Por favor inserte su Usuario", { autoClose: 3000,  });
+    } else if (usuario === "" || password === "") {
+      toast.error("Por favor inserte su contraseña", { autoClose: 3000,  });
+    } else if (usuario !== "admin" || password !== "12345") {
+      toast.error("Usuario o contraseña equivocados", { autoClose: 3000,  });
+    }
   }
 
   render() {
+    toast.configure();
     return (
 
-      <div className="#ae193e pink darken-4">
+      <div className="#ae193e pink darken-4" style={{height: "100vh"}}>
         <center>
           <div className="container">
             <div className="white-text text-black-2" style={{ display: "inlineBlock", padding: "0% 20% 0% 20%", border: "1%" }}>

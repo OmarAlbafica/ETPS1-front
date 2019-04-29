@@ -6,12 +6,12 @@ export default function Button(props) {
 
   if (type === "link") {
     return (
-      <Link to={url} class={`waves-effect ${color} waves-light btn`}>{text}</Link>
+      <Link to={url} className={`waves-effect ${color} waves-light btn`}>{text}</Link>
     )
   }
   return (
     <div
-      class={`waves-effect ${color} waves-light btn`}
+      className={`waves-effect ${color} waves-light btn`}
       onClick={action}
     >
       {text}

@@ -6,9 +6,9 @@ export default class Navbar extends Component {
     return (
       <div>
         <nav>
-          <div className="nav-wrapper #ae193e pink darken-4">
-            <Link to="/inicio" className="brand-logo"><i className="material-icons">home</i>Inicio</Link>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+          <div className="nav-wrapper #ae193e pink darken-4" >
+            <Link to="/inicio" className="brand-logo" style={{paddingLeft: "15px"}}><i className="material-icons">home</i>Inicio</Link>
+            <a href="#" data-target="mobile-demo" className="sidenav-trigger" ><i className="material-icons">menu</i></a>
             <ul className="right hide-on-med-and-down">
               <li><a href="facultades.html">Facultades</a></li>
               <li><a href="proveedores.html">Proveedores</a></li>
