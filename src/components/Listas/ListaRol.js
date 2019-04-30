@@ -29,15 +29,25 @@ export default class ListaRol extends Component {
 
             <tbody>
               <tr>
-                <td>Administrador</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
-              <tr>
-                <td>Usuario</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
+            <td>Administrador</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>   
 
 
             </tbody>

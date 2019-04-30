@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 export default class Inicio extends Component {
   render() {
@@ -36,7 +37,7 @@ export default class Inicio extends Component {
               <div className="card">
                 <div className="card-image">
                   <i style={{ marginTop: "4%", color: "#481121" }} className="large material-icons">directions_bus</i>
-                  <a href="#" className="btn-floating btn-large halfway-fab waves-effect waves-light pink darken-3"><i className="material-icons">add</i></a>
+                  <Link to="/vehiculos/add" className="btn-floating btn-large halfway-fab waves-effect waves-light pink darken-3"><i className="material-icons">add</i></Link>
                 </div>
                 <div className="card-content">
                   <span className="card-title pink-text">Transportes</span>
@@ -53,7 +54,7 @@ export default class Inicio extends Component {
               <div className="card">
                 <div className="card-image">
                   <i style={{ marginTop: "4%", color: "#481121" }} className="large material-icons">receipt</i>
-                  <a href="#" className="btn-floating btn-large halfway-fab waves-effect waves-light pink darken-3"><i className="material-icons">link</i></a>
+                  <Link to="/perfiles" className="btn-floating btn-large halfway-fab waves-effect waves-light pink darken-3"><i className="material-icons">link</i></Link>
                 </div>
                 <div className="card-content">
                   <span className="card-title pink-text">Perfiles de proyeccion</span>
@@ -69,7 +70,7 @@ export default class Inicio extends Component {
               <div className="card">
                 <div className="card-image">
                   <i style={{ marginTop: "4%", color: "#481121" }} className="large material-icons icon-pink darken-4">people_outline</i>
-                  <a href="#" className="btn-floating btn-large halfway-fab waves-effect waves-light pink darken-3"><i className="material-icons">add</i></a>
+                  <Link to="/proveedores/add" className="btn-floating btn-large halfway-fab waves-effect waves-light pink darken-3"><i className="material-icons">add</i></Link>
                 </div>
                 <div className="card-content">
                   <span className="card-title pink-text">Proveedores</span>

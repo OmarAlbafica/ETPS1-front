@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Input from "../forms/Input";
 
 export default class ListaPerfile extends Component {
@@ -35,7 +36,7 @@ export default class ListaPerfile extends Component {
         <td>20-20-20</td>
         <td>01-2016</td>
         <td>ARRIENDAMIENTO DE SISTEMAS DE PRODUCCION</td>
-        <td ><a href="#" className="waves-effect grey waves-light btn">Ver&nbspPerfil</a></td>
+        <td ><Link to="/perfiles/id" className="waves-effect grey waves-light btn">Ver Perfil</Link></td>
         <td><a href="#" className="waves-effect blue waves-light btn">Editar</a></td>
         <td><a href="#" className="waves-effect red waves-light btn">Eliminar</a></td>
         </tr>
@@ -45,7 +46,7 @@ export default class ListaPerfile extends Component {
         <td>20-20-20</td>
         <td>01-2016</td>
         <td>ARRIENDAMIENTO DE EQUIPO</td>
-        <td ><a href="#" className="waves-effect grey waves-light btn">Ver&nbspPerfil</a></td>
+      <td ><Link to="/perfiles/id" className="waves-effect grey waves-light btn">Ver Perfil</Link></td>
         <td><a href="#" className="waves-effect blue waves-light btn">Editar</a></td>
         <td><a href="#" className="waves-effect red waves-light btn">Eliminar</a></td>
         </tr>
@@ -55,7 +56,7 @@ export default class ListaPerfile extends Component {
         <td>20-20-20</td>
         <td>01-2016</td>
         <td>ARRIENDAMIENTO DE SISTEMAS DE PRODUCCION</td>
-        <td ><a href="#" className="waves-effect grey waves-light btn">Ver&nbspPerfil</a></td>
+      <td ><Link to="/perfiles/id" className="waves-effect grey waves-light btn">Ver Perfil</Link></td>
         <td><a href="#" className="waves-effect blue waves-light btn">Editar</a></td>
         <td><a href="#" className="waves-effect red waves-light btn">Eliminar</a></td>
         </tr>
@@ -65,7 +66,7 @@ export default class ListaPerfile extends Component {
         <td>20-20-20</td>
         <td>01-2016</td>
         <td>ARRIENDAMIENTO DE EQUIPO</td>
-        <td ><a href="#" className="waves-effect grey waves-light btn">Ver&nbspPerfil</a></td>
+      <td ><Link to="/perfiles/id" className="waves-effect grey waves-light btn">Ver Perfil</Link></td>
         <td><a href="#" className="waves-effect blue waves-light btn">Editar</a></td>
         <td><a href="#" className="waves-effect red waves-light btn">Eliminar</a></td>
         </tr>     

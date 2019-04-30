@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Input from "../forms/Input";
+import { Link } from "react-router-dom";
 
 export default class ListaGuiaTrabajo extends Component {
   render() {
@@ -36,11 +37,12 @@ export default class ListaGuiaTrabajo extends Component {
               <td>08:00</td>
               <td>10:00</td>
               <td>Flora y fauna</td>
-              <td>agregar contenido</td>
-              <td>vehiculo</td>
-              <td>seguimiento</td>
-              <td>Editar</td>
-              <td>Eliminar</td>
+              
+      <td><Link to="/perfiles/id/guias-trabajo/id/contenido/add" class="waves-effect blue-grey darken-1 waves-light btn">Agregar Contenido</Link></td>
+      <td><Link to="/vehiculos/add" class="waves-effect blue-grey lighten-2 waves-light btn">Vehiculo</Link></td>
+      <td><Link to="/perfiles/id/guias-trabajo/id/seguimientos" class="waves-effect grey waves-light btn">Seguimiento</Link></td>
+      <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+      <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
             </tr>
 
           </tbody>

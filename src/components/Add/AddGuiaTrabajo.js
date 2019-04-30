@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 export default class AddGuiaTrabajo extends Component {
   render() {
@@ -34,10 +35,10 @@ export default class AddGuiaTrabajo extends Component {
                   <input type="text" />
                 </div>
                 <div className="form-field">
-                  <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
+                <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
                 <i className="material-icons right">send</i>
                   </button>
-                  <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Cancelar
+                  <button  className="btn waves-effect waves-light pink darken-4" type="submit" name="action" ><Link to="/perfiles/id">Cancelar</Link>
                 <i className="material-icons right">cancel</i>
                   </button>
                 </div>

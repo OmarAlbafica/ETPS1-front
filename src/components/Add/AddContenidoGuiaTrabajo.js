@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Select from "react-select";
+import { Link } from "react-router-dom";
 
 export default class AddContenidoGuiaTrabajo extends Component {
 
@@ -52,8 +53,8 @@ export default class AddContenidoGuiaTrabajo extends Component {
                   <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
                   <i class="material-icons right">send</i>
                   </button>
-                  <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action">Cancelar
-                  <i class="material-icons right">cancel</i>
+                  <button  className="btn waves-effect waves-light pink darken-4" type="submit" name="action" ><Link to="/perfiles/id/guias-trabajo">Cancelar</Link>
+                <i className="material-icons right">cancel</i>
                   </button>
                 </div>
               </div>

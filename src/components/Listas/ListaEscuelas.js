@@ -39,13 +39,13 @@ export default class ListaEscuelas extends Component {
             <tbody>
               <tr>
                 <td>Escuela de ciencias aplicadas</td>
-                <td><Link to="/facultades/id/escuelas/id/asignaturas/add" class="waves-effect blue-grey lighten-2 waves-light btn">Ver Asignaturas</Link></td>
+                <td><Link to="/facultades/id/escuelas/id/asignaturas" class="waves-effect blue-grey lighten-2 waves-light btn">Ver Asignaturas</Link></td>
                 <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
                 <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
               </tr>
               <tr>
                 <td>Escuela de ciencias aplicadas</td>
-                <td><Link to="/facultades/id/escuelas/id/asignaturas/add" class="waves-effect blue-grey lighten-2 waves-light btn">Ver Asignaturas</Link></td>
+                <td><Link to="/facultades/id/escuelas/id/asignaturas" class="waves-effect blue-grey lighten-2 waves-light btn">Ver Asignaturas</Link></td>
                 <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
                 <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
               </tr>

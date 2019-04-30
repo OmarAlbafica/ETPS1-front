@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 export default class AddVehiculos extends Component {
   render() {
@@ -29,8 +30,8 @@ export default class AddVehiculos extends Component {
                   <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
                         <i className="material-icons right">send</i>
                   </button>
-                  <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Cancelar
-                        <i className="material-icons right">cancel</i>
+                 <button  className="btn waves-effect waves-light pink darken-4" type="submit" name="action" ><Link to="/perfiles/id/guias-trabajo">Cancelar</Link>
+                <i className="material-icons right">cancel</i>
                   </button>
                 </div>
               </div>
