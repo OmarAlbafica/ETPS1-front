@@ -57,6 +57,7 @@ export default class App extends Component {
           <Route path="/facultades/add" exact component={AddFacultad} />
           <Route path="/facultades/id/escuelas" exact component={Escuelas} />
           <Route path="/facultades/id/escuelas/add" exact component={AddEscuela} />
+          <Route path="/facultades/id/escuelas/id/asignaturas" exact component={ListaAsignaturas} />
           <Route path="/facultades/id/escuelas/id/asignaturas/add" exact component={AddAsignatura} />
           <Route path="/usuarios" exact component={ListaUsuarios} />
           <Route path="/usuarios/add" exact component={AddUsuarios} />
@@ -77,6 +78,7 @@ export default class App extends Component {
           <Route path="/perfiles/beneficiarios/add" exact component={AddBeneficiario} />
           <Route path="/perfiles/id" exact component={VerPerfil} />
           <Route path="/perfiles/id/asignaturas" exact component={ListaAsignaturas} />
+          <Route path="/perfiles/id/asignaturas/add" exact component={AddAsignatura} />
           <Route path="/perfiles/id/docentes" exact component={AddPerfilDocente} />
           <Route path="/perfiles/id/objetivos" exact component={AddObjetivoPerfil} />
           <Route path="/perfiles/id/actividades" exact component={AddActividad} />

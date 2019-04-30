@@ -33,17 +33,37 @@ export default class ListaAsignaturas extends Component {
             </thead>
 
             <tbody>
-              <tr>
+            <tr>
                 <td>Matematica</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
-              <tr>
-                <td>Diseño grafico</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
+        <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+        <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+        <tr>
+      <td>Diseño grafico</td>
+        <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+        <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
 
+                <tr>
+      <td>Matematica</td>
+        <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+        <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+        <tr>
+      <td>Diseño grafico</td>
+        <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+        <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+                  <tr>
+      <td>Matematica</td>
+        <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+        <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+        <tr>
+      <td>Diseño grafico</td>
+        <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+        <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
 
             </tbody>
           </table>

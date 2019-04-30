@@ -29,18 +29,42 @@ export default class ListaVehiculos extends Component {
             </thead>
 
             <tbody>
-              <tr>
-                <td>Microbus</td>
-                <td>$25.00</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
-              <tr>
-                <td>Pickut</td>
-                <td>$10.00</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
+                     <tr>
+            <td>Microbus</td>
+            <td>$25.00</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>Pickut</td>
+            <td>$10.00</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>Microbus</td>
+            <td>$25.00</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>Pickut</td>
+            <td>$10.00</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>        
+        <tr>
+            <td>Microbus</td>
+            <td>$25.00</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>Pickut</td>
+            <td>$10.00</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+        </tr>
 
 
             </tbody>

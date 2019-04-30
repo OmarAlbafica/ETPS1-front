@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 export default class VerPerfil extends Component {
   render() {
@@ -88,8 +89,8 @@ export default class VerPerfil extends Component {
              <td>01-2019</td>
               <td>Actividad 1</td>
               <td>5</td>
-              <td><a href="#" className="waves-effect blue-grey lighten-2 waves-light btn">Lista Guia de Trabajo</a></td>
-              <td><a href="#" className="waves-effect grey waves-light btn">Agregar Lista de Trabajo</a></td>
+              <td ><Link to="/perfiles/id/guias-trabajo" className="waves-effect blue-grey lighten-2 waves-light btn">Lista Guia de Trabajo</Link></td>
+              <td ><Link to="/perfiles/id/guias-trabajo/add" className="waves-effect grey waves-light btn">Agregar Lista de Trabajo</Link></td>
               <td><a href="#" className="waves-effect red waves-light btn">Eliminar</a></td>
        
                  </tr>
@@ -97,8 +98,8 @@ export default class VerPerfil extends Component {
               <td>01-2019</td>
               <td>Actividad 2</td>
               <td>3</td>
-              <td><a href="#" className="waves-effect blue-grey lighten-2 waves-light btn">Lista Guia de Trabajo</a></td>
-              <td><a href="#" className="waves-effect grey waves-light btn">Agregar Lista de Trabajo</a></td>
+              <td ><Link to="/perfiles/id/guias-trabajo" className="waves-effect blue-grey lighten-2 waves-light btn">Lista Guia de Trabajo</Link></td>
+              <td ><Link to="/perfiles/id/guias-trabajo/add" className="waves-effect grey waves-light btn">Agregar Lista de Trabajo</Link></td>
               <td><a href="#" className="waves-effect red waves-light btn">Eliminar</a></td>
        
                  </tr>

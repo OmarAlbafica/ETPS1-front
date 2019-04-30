@@ -50,7 +50,7 @@ export default class Navbar extends Component {
               <Link to="/inicio" className="brand-logo" style={{ paddingLeft: "15px" }}><i className="material-icons">home</i>Inicio</Link>
               <a href="#" data-target="mobile-demo" className="sidenav-trigger" ><i className="material-icons">menu</i></a>
               <ul className="right hide-on-med-and-down">
-                <li><Link to="/perfiles/id/asignaturas">Perfil Asignaturas</Link></li>
+                <li><Link to="#">Perfil Asignaturas</Link></li>
                 <li><Link to="/perfiles/id/docentes">Perfil de Docente</Link></li>
                 <li><Link to="/perfiles/id/objetivos">Objetivo del Perfil</Link></li>
                 <li><Link to="/perfiles/id/actividades">Actividades</Link></li>
@@ -64,7 +64,7 @@ export default class Navbar extends Component {
 
           <ul className="sidenav" id="mobile-demo">
             <li><Link to="/inicio"><i className="material-icons">home</i>Inicio</Link></li>
-            <li><Link to="/perfiles/id/asignaturas">Perfil Asignaturas</Link></li>
+            <li><Link to="#">Perfil Asignaturas</Link></li>
             <li><Link to="/perfiles/id/docentes">Perfil de Docente</Link></li>
             <li><Link to="/perfiles/id/objetivos">Objetivo del Perfil</Link></li>
             <li><Link to="/perfiles/id/actividades">Actividades</Link></li>
@@ -102,6 +102,29 @@ export default class Navbar extends Component {
         </div>
       )
     }
+    if (this.props.location.pathname === "/perfiles/id/guias-trabajo/id/seguimientos") {
+       return (
+        <div>
+     <nav>
+    <div class="nav-wrapper #ae193e pink darken-4">
+ <Link to="/inicio" className="brand-logo" style={{ paddingLeft: "15px" }}><i className="material-icons">home</i>Inicio</Link>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+      <li><Link to="/perfiles/id/guias-trabajo">Regresar</Link></li>
+      <li><Link to="/perfiles/id/guias-trabajo/id/seguimientos/add">Nuevo Seguimiento</Link></li>
+                <li className="salir #000000 black"><Link to="/"><i className="material-icons right">power_settings_new</i>Salir</Link></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+<li><Link to="/inicio"><i className="material-icons">home</i>Inicio</Link></li>
+      <li><Link to="/perfiles/id/guias-trabajo">Regresar</Link></li>
+      <li><Link to="/perfiles/id/guias-trabajo/id/seguimientos/add">Nuevo Seguimiento</Link></li>
+          <li className="salir #000000 black"><Link to="/"><i className="material-icons right">power_settings_new</i>Salir</Link></li>
+  </ul><span class="blue-text text-darken-2"></span>
+  </div>)
+ }
     return (
       <div>
         <nav>

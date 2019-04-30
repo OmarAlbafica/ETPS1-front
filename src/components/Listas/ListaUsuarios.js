@@ -17,30 +17,73 @@ export default class ListaUsuarios extends Component {
           />
           <br />
           <table className="responsive-table striped" >
-            <thead>
-              <tr>
+             <thead>
+          <tr>
 
-                <th>Usuario</th>
-                <th>Rol</th>
-                <th></th>
-                <th></th>
+            <th>Usuario</th>
+            <th>Rol</th>
+            <th></th>
+            <th></th>
 
-              </tr>
-            </thead>
+          </tr>
+        </thead>
 
-            <tbody>
-              <tr>
-                <td>admin</td>
-                <td>Administrador</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
-              <tr>
-                <td>Usuario</td>
-                <td>Usuario</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-              </tr>
+          <tbody>
+
+             <tr>
+                 <td>admin</td>
+            <td>Administrador</td>
+            <td ><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+            <tr>
+            <td>Usuario1</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>Usuario2</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>Usuario3</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>Usuario4</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>Usuario5</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>Usuario6</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>Usuario7</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>Usuario8</td>
+            <td>Usuario</td>
+            <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+            <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+          </tr>
 
 
             </tbody>
