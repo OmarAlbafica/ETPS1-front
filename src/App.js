@@ -42,6 +42,7 @@ import AddRequerimientosTransporte from "./components/Add/AddRequerimientosTrans
 import AddSeguimiento from "./components/Add/AddSeguimiento";
 import AddOrganizacion from "./components/Add/AddOrganizacion";
 import AddActoresClave from "./components/Add/AddActoresClave";
+import ListaTipoDescripcion from "./components/Listas/ListaTipoDescripcion";
 import Inicio from "./components/Inicio";
 
 export default class App extends Component {
@@ -49,47 +50,51 @@ export default class App extends Component {
     return (
       <Router>
         <div style={{ height: "100vh" }}>
-          <Navbar />
+          <Route path="/" component={Navbar} />
           <Route path="/" exact component={Login} />
           <Route path="/inicio" exact component={Inicio} />
-          <Route path="/perfiles" exact component={ListaPerfiles} />
-          <Route path="/perfiles/id" exact component={VerPerfil} />
-          <Route path="/facultades/add" exact component={AddFacultad} />
-          <Route path="/asignaturas/add" exact component={AddAsignatura} />
           <Route path="/facultades" exact component={Facultades} />
-          <Route path="/escuelas" exact component={Escuelas} />
-          <Route path="/escuelas/add" exact component={AddEscuela} />
-          <Route path="/guias-trabajo" exact component={GuiasDeTrabajo} />
-          <Route path="/seguimientos" exact component={ListaSeguimiento} />
-          <Route path="/asignaturas" exact component={ListaAsignaturas} />
+          <Route path="/facultades/add" exact component={AddFacultad} />
+          <Route path="/facultades/id/escuelas" exact component={Escuelas} />
+          <Route path="/facultades/id/escuelas/add" exact component={AddEscuela} />
+          <Route path="/facultades/id/escuelas/id/asignaturas/add" exact component={AddAsignatura} />
           <Route path="/usuarios" exact component={ListaUsuarios} />
-          <Route path="/roles" exact component={ListaRoles} />
-          <Route path="/vehiculos" exact component={ListaVehiculos} />
-          <Route path="/personas" exact component={ListaPersonas} />
-          <Route path="/roles/add" exact component={AddRol} />
-          <Route path="/personas/add" exact component={AddPersona} />
           <Route path="/usuarios/add" exact component={AddUsuarios} />
-          <Route path="/lineas-produccion/add" exact component={AddLineaProduccion} />
+          <Route path="/usuarios/personas" exact component={ListaPersonas} />
+          <Route path="/usuarios/personas/add" exact component={AddPersona} />
+          <Route path="/usuarios/roles" exact component={ListaRoles} />
+          <Route path="/usuarios/roles/add" exact component={AddRol} />
           <Route path="/lineas-produccion" exact component={ListaProyeccion} />
-          <Route path="/ciclos" exact component={ListaCiclos} />
+          <Route path="/lineas-produccion/add" exact component={AddLineaProduccion} />
           <Route path="/proveedores" exact component={ListaProveedores} />
-          <Route path="/beneficiarios" exact component={ListaBeneficiarios} />
-          <Route path="/beneficiarios/add" exact component={AddBeneficiario} />
-          <Route path="/ciclos/add" exact component={AddCiclo} />
-          <Route path="/perfiles/add" exact component={AddPerfil} />
-          <Route path="/perfiles/docentes/add" exact component={AddPerfilDocente} />
-          <Route path="/perfil/objetivos/add" exact component={AddObjetivoPerfil} />
-          <Route path="/actividades/add" exact component={AddActividad} />
           <Route path="/proveedores/add" exact component={AddProveedor} />
-          <Route path="/detalle-compra" exact component={DetalleCompra} />
-          <Route path="/guias-trabajo/add" exact component={AddGuiaTrabajo} />
-          <Route path="/tipo-descripcion" exact component={AddTipoDescripcion} />
-          <Route path="/guias-trabajo/contenido/add" exact component={AddContenidoGuiaTrabajo} />
+
+          <Route path="/perfiles" exact component={ListaPerfiles} />
+          <Route path="/perfiles/add" exact component={AddPerfil} />
+          <Route path="/perfiles/ciclos" exact component={ListaCiclos} />
+          <Route path="/perfiles/ciclos/add" exact component={AddCiclo} />
+          <Route path="/perfiles/beneficiarios" exact component={ListaBeneficiarios} />
+          <Route path="/perfiles/beneficiarios/add" exact component={AddBeneficiario} />
+          <Route path="/perfiles/id" exact component={VerPerfil} />
+          <Route path="/perfiles/id/asignaturas" exact component={ListaAsignaturas} />
+          <Route path="/perfiles/id/docentes" exact component={AddPerfilDocente} />
+          <Route path="/perfiles/id/objetivos" exact component={AddObjetivoPerfil} />
+          <Route path="/perfiles/id/actividades" exact component={AddActividad} />
+          <Route path="/perfiles/id/detalle-compra" exact component={DetalleCompra} />
+          <Route path="/perfiles/id/organizaciones" exact component={AddOrganizacion} />
+          <Route path="/perfiles/id/actores-clave" exact component={AddActoresClave} />
+          <Route path="/perfiles/id/guias-trabajo" exact component={GuiasDeTrabajo} />
+          <Route path="/perfiles/id/guias-trabajo/add" exact component={AddGuiaTrabajo} />
+          <Route path="/perfiles/id/guias-trabajo/id/contenido/add" exact component={AddContenidoGuiaTrabajo} />
+          <Route path="/perfiles/id/guias-trabajo/id/seguimientos" exact component={ListaSeguimiento} />
+          <Route path="/perfiles/id/guias-trabajo/id/seguimientos/add" exact component={AddSeguimiento} />
+          <Route path="/perfiles/id/guias-trabajo/id/transporte/add" exact component={AddRequerimientosTransporte} />
+
+          <Route path="/tipo-descripcion" exact component={ListaTipoDescripcion} />
+          <Route path="/tipo-descripcion/add" exact component={AddTipoDescripcion} />
+
+          <Route path="/vehiculos" exact component={ListaVehiculos} />
           <Route path="/vehiculos/add" exact component={AddVehiculos} />
-          <Route path="/transporte/add" exact component={AddRequerimientosTransporte} />
-          <Route path="/seguimientos/add" exact component={AddSeguimiento} />
-          <Route path="/organizaciones/add" exact component={AddOrganizacion} />
-          <Route path="/actores-clave/add" exact component={AddActoresClave} />
 
           <br />
           <Footer />

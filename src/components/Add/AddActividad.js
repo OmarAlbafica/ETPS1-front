@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Select from "react-select";
+import { Link } from "react-router-dom";
 
 export default class AddActividad extends Component {
 
@@ -22,6 +23,11 @@ export default class AddActividad extends Component {
     ];
     return (
       <div className="container">
+        <div className="form-field">
+          <br />
+          <Link to="/perfiles/id" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+        </div>
         <h3>Nueva Actividad</h3>
         <div className="row ">
           <div className="col s12 m12 l12">

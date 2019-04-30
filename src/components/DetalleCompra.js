@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 export default class DetalleCompra extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <div className="col s12 m12 l12">
-          </div>
+        <div className="form-field">
+          <br />
+          <Link to="/perfiles/id" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
         </div>
         <h3>Detalle Compra: </h3>
         <div className="row">
@@ -77,6 +79,7 @@ export default class DetalleCompra extends Component {
                   <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
                         <i className="material-icons right">send</i>
                   </button>
+                  {" "}
                   <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Cancelar
                         <i className="material-icons right">cancel</i>
                   </button>

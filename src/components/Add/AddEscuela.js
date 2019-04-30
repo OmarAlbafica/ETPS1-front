@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class AddEscuela extends Component {
   render() {
     return (
       <div className="container">
+        <div className="form-field">
+          <br />
+          <Link to="/facultades/id/escuelas" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+        </div>
         <h3>Añadir Escuela</h3>
         <div className="row">
           <form className="col s12">
