@@ -48,7 +48,7 @@ import Inicio from "./components/Inicio";
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/ETPS1-front">
         <div style={{ height: "100vh" }}>
           <Route path="/" component={Navbar} />
           <Route path="/" exact component={Login} />
