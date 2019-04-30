@@ -1,9 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+
 
 export default class AddPerfil extends Component {
   render() {
     return (
       <div className="container">
+        <div className="form-field">
+          <br />
+          <Link to="/perfiles" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+        </div>
         <h3>Nuevo Perfil</h3>
         <div className="card">
           <div className="card-content">
@@ -89,6 +96,7 @@ export default class AddPerfil extends Component {
             <div className="form-field">
               <button className="btn waves-effect waves-light blue" type="submit" name="action">Guardar
           </button>
+              {" "}
               <button className="btn waves-effect waves-light red" type="submit" name="action">Cancelar
           </button>
             </div>

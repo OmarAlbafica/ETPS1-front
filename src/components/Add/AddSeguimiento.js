@@ -21,6 +21,11 @@ export default class AddSeguimiento extends Component {
     ];
     return (
       <div className="container">
+        <div className="form-field">
+          <br />
+          <Link to="/perfiles/id/guias-trabajo/id/seguimientos" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+        </div>
         <h3>Nuevo Seguimiento</h3>
         <div className="row">
           <div className="col s12 m12 l12">
@@ -64,8 +69,8 @@ export default class AddSeguimiento extends Component {
                   <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
                     <i className="material-icons right">send</i>
                   </button>
-                  <button  className="btn waves-effect waves-light pink darken-4" type="submit" name="action" ><Link to="/perfiles/id/guias-trabajo/id/seguimientos">Cancelar</Link>
-                <i className="material-icons right">cancel</i>
+                  <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action" ><Link to="/perfiles/id/guias-trabajo/id/seguimientos">Cancelar</Link>
+                    <i className="material-icons right">cancel</i>
                   </button>
                 </div>
               </div>

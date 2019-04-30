@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
 import Input from "../forms/Input";
+import { Link } from 'react-router-dom'
+
 
 export default class ListaTipoDescripcion extends Component {
   render() {
     return (
       <div className="container">
+        <div className="form-field">
+          <br />
+          <Link to="/inicio" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+          {" "}
+          <Link to="/tipo-descripcion/add" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">add_circle_outline</i>Nuevo tipo de Descripción
+          </Link>
+        </div>
         <h3>Tipo de descripción</h3>
         <br />
         <Input

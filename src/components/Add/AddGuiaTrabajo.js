@@ -5,6 +5,11 @@ export default class AddGuiaTrabajo extends Component {
   render() {
     return (
       <div className="container">
+        <div className="form-field">
+          <br />
+          <Link to="/perfiles/id/guias-trabajo" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+        </div>
         <h3>Nueva Guia</h3>
         <div className="row">
           <div className="col s12 m12 l12">
@@ -35,11 +40,12 @@ export default class AddGuiaTrabajo extends Component {
                   <input type="text" />
                 </div>
                 <div className="form-field">
-                <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
+                  <button className="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
                 <i className="material-icons right">send</i>
                   </button>
-                  <button  className="btn waves-effect waves-light pink darken-4" type="submit" name="action" ><Link to="/perfiles/id">Cancelar</Link>
-                <i className="material-icons right">cancel</i>
+                  {" "}
+                  <button className="btn waves-effect waves-light white-text pink darken-4" type="submit" name="action" ><Link to="/perfiles/id">Cancelar</Link>
+                    <i className="material-icons right">cancel</i>
                   </button>
                 </div>
               </div>

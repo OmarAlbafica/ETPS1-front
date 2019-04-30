@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
 import Input from "../forms/Input";
+import { Link } from 'react-router-dom'
+
 
 export default class ListaPersonas extends Component {
   render() {
     return (
       <div className="container">
+        <div className="form-field">
+          <br />
+          <Link to="/usuarios" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+          {" "}
+          <Link to="/usuarios/personas/add" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">add_circle_outline</i>Nueva persona
+          </Link>
+        </div>
         <h3>Linea de proyección</h3>
         <div className="row">
           <br />

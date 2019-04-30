@@ -1,6 +1,11 @@
 import React from 'react';
 
-export default function Footer() {
+export default function Footer(props) {
+  if (props.location.pathname === "/") {
+    return (
+      <div></div>
+    )
+  }
   return (
     <footer className="page-footer #ae193e pink darken-4">
       <div className="container_end #ae193e pink darken-4">

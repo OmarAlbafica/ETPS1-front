@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class AddUsuarios extends Component {
   render() {
     return (
       <div class="container">
+        <div className="form-field">
+          <br />
+          <Link to="/usuarios" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+        </div>
         <h3>Añadir Usuario</h3>
         <div class="card">
           <div class="card-content">

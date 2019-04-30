@@ -5,6 +5,11 @@ export default class VerPerfil extends Component {
   render() {
     return (
         <div className="container" style={{marginTop: "20px"}}>
+        <div className="form-field">
+          <br />
+          <Link to="/perfiles" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+        </div>
         <h3>Detalle de Perfil</h3>
               <div className="divider"></div> 
          <div className="section">

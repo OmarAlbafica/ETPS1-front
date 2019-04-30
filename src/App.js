@@ -99,7 +99,7 @@ export default class App extends Component {
           <Route path="/vehiculos/add" exact component={AddVehiculos} />
 
           <br />
-          <Footer />
+          <Route path="/" component={Footer} />
         </div>
       </Router>
     )

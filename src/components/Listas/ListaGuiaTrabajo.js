@@ -6,6 +6,14 @@ export default class ListaGuiaTrabajo extends Component {
   render() {
     return (
       <div className="container" style={{ paddingTop: "50px" }}>
+        <div className="form-field">
+          <br />
+          <Link to="/perfiles/id" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">arrow_back</i>Atrás
+          </Link>
+          {" "}
+          <Link to="/perfiles/id/guias-trabajo/add" className="btn waves-effect waves-light pink darken-4"><i className="material-icons right">add_circle_outline</i>Nueva Guia de trabajo
+          </Link>
+        </div>
         <h3 style={{ marginBottom: "50px" }}>Listado de Guias de Trabajo</h3>
         <Input
           icon="account_circle"
@@ -37,12 +45,12 @@ export default class ListaGuiaTrabajo extends Component {
               <td>08:00</td>
               <td>10:00</td>
               <td>Flora y fauna</td>
-              
-      <td><Link to="/perfiles/id/guias-trabajo/id/contenido/add" class="waves-effect blue-grey darken-1 waves-light btn">Agregar Contenido</Link></td>
-      <td><Link to="/vehiculos/add" class="waves-effect blue-grey lighten-2 waves-light btn">Vehiculo</Link></td>
-      <td><Link to="/perfiles/id/guias-trabajo/id/seguimientos" class="waves-effect grey waves-light btn">Seguimiento</Link></td>
-      <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
-      <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
+
+              <td><Link to="/perfiles/id/guias-trabajo/id/contenido/add" class="waves-effect blue-grey darken-1 waves-light btn">Agregar Contenido</Link></td>
+              <td><Link to="/vehiculos/add" class="waves-effect blue-grey lighten-2 waves-light btn">Vehiculo</Link></td>
+              <td><Link to="/perfiles/id/guias-trabajo/id/seguimientos" class="waves-effect grey waves-light btn">Seguimiento</Link></td>
+              <td><a href="#" class="waves-effect blue waves-light btn">Editar</a></td>
+              <td><a href="#" class="waves-effect red waves-light btn">Eliminar</a></td>
             </tr>
 
           </tbody>
